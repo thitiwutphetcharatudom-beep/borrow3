@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ยืม/คืนอุปกรณ์</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>ระบบยืม-คืนอุปกรณ์</h1>
+    <nav>
+      <a href="index.html">หน้าหลัก</a>
+      <a href="borrow.html">ยืม/คืนอุปกรณ์</a>
+      <a href="status.html">เช็คสถานะ</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>ยืม/คืนอุปกรณ์</h2>
+    <form id="borrow-return-form">
+      <label for="borrower-input">ชื่อผู้ยืม:</label>
+      <input type="text" id="borrower-input" required />
+
+      <label for="device-select">เลือกอุปกรณ์:</label>
+      <select id="device-select" required>
+        <!-- ตัวเลือกอุปกรณ์จะเพิ่มโดย JS -->
+      </select>
+
+      <label for="action-select">เลือกการดำเนินการ:</label>
+      <select id="action-select" required>
+        <option value="borrow">ยืม</option>
+        <option value="return">คืน</option>
+      </select>
+
+      <label for="quantity-input">จำนวน:</label>
+      <input type="number" id="quantity-input" min="1" value="1" required />
+
+      <button type="submit">ยืนยัน</button>
+    </form>
+
+    <div id="message"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 โรงงานของคุณ</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

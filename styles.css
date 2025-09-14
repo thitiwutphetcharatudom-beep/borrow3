@@ -1,0 +1,72 @@
+/* โทนสีฟ้า และออกแบบให้สวยงาม อ่านง่าย */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #e8f4fd;
+  color: #0d47a1;
+}
+
+header {
+  background-color: #2196f3;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 1rem;
+  border: 1px solid #90caf9;
+  text-align: left;
+}
+
+th {
+  background-color: #64b5f6;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2196f3;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
